@@ -2,6 +2,15 @@
 public:
     int openLock(vector<string>& deadends, string target) {
         
+        /*
+        # Observation
+        1) A state( Initial State"0000") Contains 4 char. And We Can either add 1 to a char or subtract 1 to a char
+        2) Check all the possible states ( "1000", "0100", "0010", "0001" ..... upto "9999")
+        3) In one Step we have to move only one lock or Add/Subtract to the state
+        
+        */
+
+
         // Creating the set and inserting all the deadends for removing the similar deadends
         unordered_set<string> dead(deadends.begin(),deadends.end());
 
