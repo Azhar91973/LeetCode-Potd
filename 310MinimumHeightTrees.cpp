@@ -2,7 +2,8 @@ class Solution {
 public:
 
     /*
-        Idea is to remove all the leaf node's why?
+    (TOPOLOGICAL SORT)
+        Idea is to remove all the leaf node's 
         Bcz those node which have higher indegree having min height so eliminating the all smaller indegree nodes 
                 
     */
